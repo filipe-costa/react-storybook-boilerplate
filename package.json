@@ -1,0 +1,40 @@
+{
+  "name": "react-storybook-boilerplate",
+  "version": "1.0.0",
+  "description": "Storybook using jest/testing-library in React",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:filipe-costa/react-storybook-boilerplate.git",
+  "author": "Filipe Costa",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:webpack": "npx webpack", 
+    "build:declarations": "tsc",
+    "build:package": "yarn build:webpack && yarn build:declarations",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@testing-library/react": "^11.1.2",
+    "@types/jest": "^26.0.15",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.1",
+    "jest": "^26.6.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

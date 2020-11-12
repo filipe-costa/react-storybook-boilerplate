@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": [
+      "esnext"
+    ],
+    "strict": true,
+    "target": "es6",
+    "allowJs": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    // Process the compiler uses to figure out what an import refers to.
+    "moduleResolution": "node",
+    // Ensure that .d.ts files are create by typescript, but not .js files
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    // Ensure that Babel can safely transpile files
+    "isolatedModules": true
+  },
+  "include": [
+    "lib/**/*.tsx",
+    "lib/**/*.ts"
+  ],
+  "exclude": [
+    ".storybook",
+    "node_modules",
+    "lib/**/*.stories.ts",
+    "lib/**/*.test.ts"
+  ]
+}
