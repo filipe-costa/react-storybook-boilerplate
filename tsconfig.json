@@ -2,6 +2,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "lib": [
+      "dom",
       "esnext"
     ],
     "strict": true,
@@ -28,6 +29,7 @@
     "lib/**/*.ts"
   ],
   "exclude": [
+    "dist",
     ".storybook",
     "node_modules",
     "lib/**/*.stories.ts",

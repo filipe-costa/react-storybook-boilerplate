@@ -2,14 +2,18 @@
   "name": "react-storybook-boilerplate",
   "version": "1.0.0",
   "description": "Storybook using jest/testing-library in React",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "git@github.com:filipe-costa/react-storybook-boilerplate.git",
   "author": "Filipe Costa",
   "license": "MIT",
   "private": true,
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build:webpack": "npx webpack", 
+    "clean": "rm -rf dist",
+    "build:webpack": "npx webpack",
     "build:declarations": "tsc",
     "build:package": "yarn build:webpack && yarn build:declarations",
     "test": "jest"
