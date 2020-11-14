@@ -15,8 +15,10 @@
     "clean": "rm -rf dist",
     "build:webpack": "npx webpack",
     "build:declarations": "tsc",
-    "build:package": "yarn build:webpack && yarn build:declarations",
-    "test": "jest"
+    "build:package": "yarn clean && yarn build:webpack && yarn build:declarations",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006 --no-dll",
+    "build-storybook": "build-storybook --no-dll"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -28,17 +30,28 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.12.1",
+    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
+    "@storybook/react": "^6.0.28",
     "@testing-library/react": "^11.1.2",
     "@types/jest": "^26.0.15",
+    "@types/react": "^16.9.56",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.1",
     "jest": "^26.6.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "typescript": "^4.0.5"
+    "react-is": "^17.0.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
   },
   "dependencies": {
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.2.0"
+    "@testing-library/jest-dom": "^5.11.6"
   }
 }

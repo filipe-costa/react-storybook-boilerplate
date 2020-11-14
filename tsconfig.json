@@ -7,6 +7,7 @@
     ],
     "strict": true,
     "target": "es6",
+    "module": "es6",
     "allowJs": true,
     "jsx": "react",
     "esModuleInterop": true,
@@ -15,7 +16,6 @@
     "noImplicitAny": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-    "module": "commonjs",
     // Process the compiler uses to figure out what an import refers to.
     "moduleResolution": "node",
     // Ensure that .d.ts files are create by typescript, but not .js files
@@ -32,7 +32,8 @@
     "dist",
     ".storybook",
     "node_modules",
-    "lib/**/*.stories.ts",
+    "utils/setupTests.ts",
+    "lib/**/*.stories.tsx",
     "lib/**/*.test.ts"
   ]
 }
